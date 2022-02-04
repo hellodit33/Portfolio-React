@@ -1,0 +1,212 @@
+/* Homepage */
+
+.click p {
+    color: white;
+    font-style: italic;
+    right:70px;
+      font-size: 20px;
+    z-index: 999999;
+    position: absolute;
+    top: 20px;
+    padding: 6px;
+  }
+  
+  
+   .homepage {
+        background: url("../img/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+  
+  .homepage .overlay {
+        background-image: var(--background-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        color: white;
+        text-align: center;
+    }
+  
+  .homepage .overlay h1 {
+        text-transform: uppercase;
+        font-size: 96px;
+    }
+  
+  .homepage .overlay p {
+        font-size: 36px;
+    }
+  
+  .homepage .overlay ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+  
+    }
+  
+  .homepage .overlay ul li {
+        margin: 0 20px;
+  
+    }
+  
+  .homepage .overlay ul li a {
+      font-size: 30px;
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+      text-align: center;
+      line-height: 45px;
+      margin: 0 10px;
+      display: block;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+      border: 3px solid #fff;
+  
+    }
+  
+  .homepage .overlay ul li a:hover {
+      font-size: 34px;
+    }
+  
+  .hompage .overlay ul {
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  
+    }
+    
+  .homepage .overlay ul li a .icon {
+      position: relative;
+      color: #262626;
+      transition: .1s;
+      display: inline;
+        vertical-align: middle;
+    }
+    
+  .homepage .overlay ul li a:hover .icon {
+      color: #fff;
+      transform: rotateY(360deg);
+    }
+    
+  .homepage .overlay ul li a:before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: .5s;
+    }
+    
+  .homepage .overlay ul li a:hover:before {
+      top: 0;
+    }
+    
+  .homepage .overlay ul li:nth-child(1) a:before{
+      background: #ffcfd2;
+    }
+  
+  
+  .hover-on {
+    display: none;
+  }
+  
+  .homepage .overlay .link:hover + .hover-on {
+    display: block;
+    color: white;
+    padding: 10px;
+    font-family: 'Caveat', cursive;
+  }
+  
+    
+  .homepage .overlay ul li:nth-child(2) a:before{
+      background: #f1c0e8;
+    }
+    
+    .homepage .overlay ul li:nth-child(3) a:before {
+      background: #a3c4f3;
+    }
+    
+    .homepage .overlay ul li:nth-child(4) a:before {
+      background: #90dbf4;
+    }
+  
+    .homepage .overlay ul li:nth-child(5) a:before {
+      background: #8eecf5;
+    }
+  
+    nav a.active {
+      border-radius: 30px;
+      color: black;
+  
+    }
+
+    @media (max-width: 992px){ 
+        .homepage .overlay h1 {
+            font-size: 70px;
+        }
+     
+      }
+
+      @media (max-width: 768px){ 
+        .homepage .overlay h1 {
+          font-size: 65px;
+      }
+    }
+
+
+      @media (max-width: 500px){ 
+
+        
+        
+    
+      
+      
+          .homepage .overlay h1 {
+              font-size: 60px;
+          }
+      
+          .homepage .overlay p {
+              font-size: 40px;
+              margin-top: 20px;
+          }
+      
+          .homepage .overlay ul li a {
+              font-size: 18px;
+              width: 30px;
+              height: 30px;
+              background-color: #fff;
+              text-align: center;
+              line-height: 27px;
+              margin: 0 10px;
+              display: block;
+              border-radius: 50%;
+              position: relative;
+              overflow: hidden;
+              border: 3px solid #fff;
+          }
+      
+          .homepage .overlay ul li a:hover {
+            font-size: 20px;
+          }
+      
+      .homepage .overlay ul .icon{
+        padding: 0;
+      
+      }
+      
+      .homepage .overlay .link:hover + .hover-on {
+        display: none;
+        
+      }
+      
+      
+     
+      }
