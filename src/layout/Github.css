@@ -1,0 +1,106 @@
+/*Projects */
+
+.github {
+    background-image: var(--background-color);
+    padding-bottom: 100px;
+  }
+
+  .github .titles{
+    text-align:center;
+    font-size:50px;
+  }
+  
+  
+  .github h1 {
+    padding-top: 50px;
+    color: #fff;
+  }
+  
+  .github .cards {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+   max-width: 1100px;
+   overflow:visible;
+   margin: auto;
+   height: 100%;
+   gap: 5px;
+    color: #fff;
+  }
+  
+  .github .cards h4 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+  }
+  
+  .github .cards p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .github .cards ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .github .cards ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .github .cards ul li a.github {
+    background-color: #333;
+    padding: 5px;
+    font-size: 15px;
+  }
+  
+  .github .cards ul li a.demo {
+    background-color: #224899;
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .github .github-title {
+    display: flex;
+    background-image: url(../img/folder.png);
+    background-repeat: no-repeat;
+      background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 10vh;
+    margin: 30px;
+    padding: 80px;
+    font-size: 30px;
+  }
+
+  .github .github-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+  }
+
+  @media (max-width: 1150px){ 
+    .github .cards {
+        padding: 0 60px 20px;
+    }
+  }
+
+@media (max-width: 768px){ 
+    .github .cards {  grid-template-columns: repeat (2, 1fr );}
+}
+
+
+@media (max-width: 500px){
+    
+  
+      .github .cards {  grid-template-columns: 1fr;
+  }
+  
+  }

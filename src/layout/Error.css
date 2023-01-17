@@ -1,0 +1,25 @@
+/* Error */
+
+section .error {
+    cursor: pointer;
+    color: black;
+  }
+  
+  .error h1 {
+   font-size: 46px;
+   display: grid;
+  grid-template-columns: 1fr; justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .error a {
+    color: black;
+    margin-top: 20px;
+    text-decoration: underline;
+  }
+  
+  .error a:hover {
+    color: purple;
+  }
+  

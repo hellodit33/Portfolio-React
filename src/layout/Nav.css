@@ -1,0 +1,60 @@
+/* Menu button */
+.menu-btn {
+    position: absolute;
+    right: 30px;    
+    margin-top: 20px;
+    z-index: 99999999;
+}
+
+.menu-btn button {
+    background-color: transparent;
+    font-size: 36px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Header */
+
+  .header {
+    position: absolute;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    width: 200px;
+    transition: all .5s ease-in-out;
+  }
+
+.header.open {
+    height: 100vh;
+    background-color: #fde2e4;
+    z-index: 9999999;
+}
+
+.header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 40px;
+  }
+
+.header nav ul li {
+    margin: 20px 0;
+  }
+
+  .header .titles, .contacts .titles, .projects .titles {
+    font-size: 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 500px){ 
+
+
+  .menu-btn {
+    right: 30px;
+}
+  }
